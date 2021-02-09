@@ -40,7 +40,7 @@ require_once( get_template_directory().'/functions/default-theme-configuration/d
 require_once( get_template_directory().'/functions/admin/admin-page.php' );
 
 // Custom Login
-require_once( get_template_directory().'/functions/login/zume-login.php' );
+//require_once( get_template_directory().'/functions/login/zume-login.php' );
 require_once( get_template_directory().'/functions/urls.php' );
 
 
