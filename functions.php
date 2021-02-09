@@ -1,19 +1,14 @@
 <?php
-/**
- * For more info: https://developer.wordpress.org/themes/basics/theme-functions/
- *
- */
 
 
 // Add permission for mapping system
-$current_user = wp_get_current_user();
-$current_user->add_cap( 'view_mapping' );
-if ( ! class_exists( 'DT_Mapping_Module' ) ) {
-    require_once( 'dt-mapping/loader.php' );
-    new DT_Mapping_Module_Loader( 'theme' );
-}
+//$current_user = wp_get_current_user();
+//$current_user->add_cap( 'view_mapping' );
+//if ( ! class_exists( 'DT_Mapping_Module' ) ) {
+//    require_once( 'dt-mapping/loader.php' );
+//    new DT_Mapping_Module_Loader( 'theme' );
+//}
 // end mapping system load
-
 
 
 // Theme support options
@@ -45,7 +40,7 @@ require_once( get_template_directory().'/functions/default-theme-configuration/d
 require_once( get_template_directory().'/functions/admin/admin-page.php' );
 
 // Custom Login
-require_once( get_template_directory().'/functions/login/zume-login.php' );
+//require_once( get_template_directory().'/functions/login/zume-login.php' );
 require_once( get_template_directory().'/functions/urls.php' );
 
 
