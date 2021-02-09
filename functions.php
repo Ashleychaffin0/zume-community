@@ -9,6 +9,8 @@
 //    new DT_Mapping_Module_Loader( 'theme' );
 //}
 // end mapping system load
+require_once( get_template_directory().'/dt-mapping/geocode-api/mapbox-api.php' );
+
 
 
 // Theme support options
@@ -37,7 +39,10 @@ require_once( get_template_directory().'/functions/default-theme-configuration/d
 
 // Customize the WordPress admin
 //require_once( get_template_directory().'/functions/admin/admin.php' );
-require_once( get_template_directory().'/functions/admin/admin-page.php' );
+if ( is_admin() ) {
+    require_once( get_template_directory().'/functions/admin/admin-page.php' );
+}
+
 
 // Custom Login
 //require_once( get_template_directory().'/functions/login/zume-login.php' );
@@ -61,7 +66,7 @@ require_once( get_template_directory().'/functions/statistics.php' );
 require_once( get_template_directory().'/functions/multi-role/multi-role.php' );
 
 // maps
-add_action( 'wp_head', 'zume_captcha_header' );
+//add_action( 'wp_head', 'zume_captcha_header' );
 
 /**
  * GLOBAL FUNCTIONS

@@ -62,7 +62,7 @@ function site_scripts() {
     wp_enqueue_script( 'lodash' );
 
     // main stylesheet
-    wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/styles/style.css', array(), filemtime( get_template_directory() . '/assets/styles/scss' ), 'all' );
+    wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/styles/style.css', array(), filemtime( get_template_directory() . '/assets/styles/style.css' ), 'all' );
     wp_style_add_data( 'site-css', 'rtl', 'replace' );
 
     // script for threaded comments

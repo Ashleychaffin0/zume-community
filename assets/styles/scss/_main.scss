@@ -163,7 +163,7 @@ select {
     background: #2CACE2;
     color: $white;
 }
-#top-full-menu-div ul.dropdown.menu .is-active>a{
+#top-full-menu-div ul.dropdown.menu .is-active > a{
     background: #2CACE2;
     color: $white;
 }
@@ -219,6 +219,7 @@ iframe#launcher {
     color:white;
     line-height: 1.5em;
 }
+
 
 
 
@@ -1091,4 +1092,9 @@ hr {
         margin-right: 7px;
         margin-left: 7px;
     }
+}
+
+
+.dropdown.menu>li.active >a {
+    background: #323a68;
 }
