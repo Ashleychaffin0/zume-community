@@ -12,7 +12,7 @@ var gulp  = require('gulp'),
 // Modify these variables to match your project needs
 
 // Set local URL if using Browser-Sync
-const LOCAL_URL = 'https://zume-vision/';
+const LOCAL_URL = 'https://zume-community/';
 
 // Set path to Foundation files
 const FOUNDATION = 'node_modules/foundation-sites';

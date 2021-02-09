@@ -21,7 +21,7 @@ $post = get_post();
                         <div class="cell"><img src="<?php echo esc_url( zume_images_uri() )?>zume-logo.svg" style="max-height:100px" id="home-logo" alt="welcome-graphic" /></div>
                         <div class="cell"><p class="large-text">to saturate the world with multiplying disciples<br>in our generation.</p></div>
                         <div class="cell"><img src="<?php echo esc_url( zume_images_uri() )?>vision/jesus-globe.png" alt="disciple making movements" style="max-height:250px"  /></div>
-                        <div class="cell"><h1 id="zume-vision" class="large-text">Zúme is a community of practice <br>for those who want to see disciple making movements.</h1></div>
+                        <div class="cell"><h1 id="zume-community" class="large-text">Zúme is a community of practice <br>for those who want to see disciple making movements.</h1></div>
                         <div class="cell padding-top-1"><?php get_template_part( "parts/content", "join" ); ?></div>
                         <div class="cell padding-top-2">
                             <div class="grid-x">

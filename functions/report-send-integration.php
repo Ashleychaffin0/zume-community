@@ -72,7 +72,7 @@ class Report_Send_Integration {
             ]
         ];
 
-        $result = wp_remote_post( 'https://global.zume-vision/wp-json/dt-public/v1/network/report', $packet );
+        $result = wp_remote_post( 'https://global.zume-community/wp-json/dt-public/v1/network/report', $packet );
 
         return wp_remote_retrieve_body( $result );
     }
