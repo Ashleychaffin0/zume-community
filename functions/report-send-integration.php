@@ -21,6 +21,7 @@ class Report_Send_Integration {
      * @since   0.1.0
      */
     public function __construct() {
+        dt_network_site_profile();
         add_action( 'rest_api_init', [ $this, 'add_api_routes' ] );
         add_filter( 'site_link_type', [ $this, 'dt_network_report_receiving_link' ], 10, 1 );
         add_filter( 'site_link_type_capabilities', [ $this, 'dt_network_report_receiving_caps' ], 10, 1 );
@@ -60,6 +61,7 @@ class Report_Send_Integration {
      * @return int|WP_Error
      */
     public function send_report( WP_REST_Request $request ) {
+        dt_network_site_profile();
 
         $params = $request->get_params();
         $transfer_vars = Site_Link_System::get_site_connection_vars( 89 );
