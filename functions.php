@@ -72,18 +72,20 @@ require_once( get_template_directory().'/functions/multi-role/multi-role.php' );
  * GLOBAL FUNCTIONS
  */
 
+if ( ! function_exists('zume_get_user_meta' ) ) {
+    function zume_get_user_meta( $user_id = null ) {
 
-function zume_get_user_meta( $user_id = null ) {
-
-    if ( ! is_user_logged_in() ) {
-        return [];
+        if ( ! is_user_logged_in() ) {
+            return [];
+        }
+        if ( is_null( $user_id ) ) {
+            $user_id = get_current_user_id();
+        }
+        return array_map( function ( $a ) { return maybe_unserialize( $a[0] );
+        }, get_user_meta( $user_id ) );
     }
-    if ( is_null( $user_id ) ) {
-        $user_id = get_current_user_id();
-    }
-    return array_map( function ( $a ) { return maybe_unserialize( $a[0] );
-    }, get_user_meta( $user_id ) );
 }
+
 
 /**
  * END GLOBAL FUNCTIONS
